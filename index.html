@@ -4,35 +4,60 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<link href="logo/logo/logo.png" rel="icon">
-	<title>Music | Block_Cipher</title>
+	<script src="https://kit.fontawesome.com/c71c0c120a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<title>Music Room | Block_Cipher</title>
 </head>
 <body>
 	 <div class="container">
 	 	<div class="navbar">
-	 		<img src="logo/logo/logo.png" class="logo">
+	 		<a href="index.html"><img src="logo/logo/logo.png" class="logo"></a>
+			<!-- <h3>@Block_Cipher Music Room</h> -->
 	 		<ul>
 	 			<li><a href="#">Home</a></li>
-	 			<li><a href="#">PlayList</a></li>
-	 			<li><a href="#">About</a></li>
-	 			<li><a href="#">Contact</a></li>
-	 		</ul>
+	 			<li><a href="playlist.html">PlayList</a></li>
+	 			<!-- <li><a href="#">About</a></li> -->
+	 			<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<li><a href="#" class="spotify">Spotify</a></li>
 	 	</div>
 	 	<div class="content">
 	 		<div class="left-col">
-	 			<h1 style="text-align: center;">Welcome To Block_Cipher <br><br> <b style="color: black;">Music Room </b></h1>
+				 <br><br>
+	 			<h1 style="text-align: center; font-family: Segoe Script;">Welcome To <a href="https://blockcipher123.github.io/GauravKumar/" class="block_cipher" style="font-family: Segoe Script;">Block_Cipher</a><br>Music Room</h1>
 	 		</div>
+
 	 		<div class="right-col">
-	 			<!-- <p>Click Here To Listen</p> -->
-	 			<img src="">
+				
+	 			<p id="click">Click Here To Listen</p>
+	 			<br>
+	 			<img src="img/play3.png" class="play" id="icon">
+	 			<br>
+	 			<br>
+	 			<a href="#" class="more_song_style"><p style="font-family: 'Brush Script MT',cursive;">View More Song</p></a>
 	 		</div>
 	 	</div>
-
-
-
+		<!-- <footer class="footer" id="fotters">
+			<p>Powered By <a href="https://blockcipher123.github.io/GauravKumar/" class="block_cipher">Block_Cipher</a></p>
+	
+		</footer> -->
 	 </div>
 
+	 <audio id="mysong">
+		<source src="song/first_background.mp3" type="audio/mp3">
 
 
+
+	 </audio>
+
+
+
+
+	 <script src='main.js'></script>
+
+
+	 
 </body>
 </html>

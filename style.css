@@ -321,6 +321,10 @@
 	cursor: pointer;
 }
 
+#icon13{
+	cursor: pointer;
+}
+
 /* ================== End PlayList Contenent ==================== */
 
 .spotify_btn{
@@ -476,4 +480,8 @@
 }
 
 
-
+.gender{
+	margin-left: 15%;
+	padding: 16px 34px;
+	background: transparent;
+}

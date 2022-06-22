@@ -153,7 +153,7 @@ icon11.onclick = function () {
 }
 
 
-var mysong12 = document.getElementById('mysong12');
+var mysong13 = document.getElementById('mysong12');
 var icon12 = document.getElementById('icon12');
 
 icon12.onclick = function () {
@@ -163,6 +163,21 @@ icon12.onclick = function () {
     } else {
         mysong12.pause();
         icon12.src = "img/play3.png";
+    }
+}
+
+
+
+var mysong13 = document.getElementById('mysong13');
+var icon13 = document.getElementById('icon13');
+
+icon13.onclick = function () {
+    if (mysong13.paused) {
+        mysong13.play();
+        icon13.src = "img/pause.png";
+    } else {
+        mysong13.pause();
+        icon13.src = "img/play3.png";
     }
 }
 

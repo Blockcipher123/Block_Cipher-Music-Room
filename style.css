@@ -64,6 +64,16 @@
 	}
 }
 
+@media(max-width: 390px){
+	.navbar ul li a{
+		display: none;
+	}
+
+	.font{
+		font-size: 12px;
+	}
+}
+
 .content{
 	width: 100%;
 	position: absolute;
@@ -84,6 +94,57 @@
 
 .left-col h1:hover{
 	color: cornflowerblue;
+}
+
+@media(max-width: 410px){
+	.left-col h1{
+		margin-right: 6%;
+		/*margin-left: 12%;*/
+		/*text-align: center;*/
+		font-size: 12px;
+	}
+
+	#click{
+		font-size: 18px;
+	}
+	.more_song_style p{
+		font-size: 20px;
+	}
+	.font{
+		font-size: 60px;
+	}
+}
+
+
+@media(max-width: 380px){
+	.left-col h1{
+		/*margin-right: 6%;*/
+		font-size: 90px;
+	}
+
+	#click{
+		font-size: 18px;
+	}
+	.more_song_style p{
+		font-size: 20px;
+	}
+}
+
+
+
+@media(max-width: 650px){
+	.left-col h1{
+		margin-left: 30%;
+		/*text-align: center;*/
+		font-size: 18px;
+	}
+
+	#click{
+		font-size: 18px;
+	}
+	.more_song_style p{
+		font-size: 13px;
+	}
 }
 
 .music:hover{
@@ -204,6 +265,62 @@
 	transition: 0.5s;
 }
 
+@media (max-width: 450px){
+	.spotify{
+		padding: 4px 6px;
+	}
+}
+@media (max-width: 390px){
+	.spotify{
+		font-size: 15px;
+		/*display: no/ne;*/
+		padding: 2px 3px;
+	}
+}
+
+.spotify2{
+	font-family: Segoe Script;
+	text-decoration: none;
+	color: #1DB954;
+	padding: 8px 12px;
+	border: 2px solid #1DB954;
+	box-shadow: 4px 4px 8px 2px  #1DB954;
+	border-radius: 10%;
+	transition: 0.5s
+}
+
+.spotify2:hover{
+	background: #1DB954;
+	color: #fff;
+	box-shadow: none;
+	transition: 0.5s;
+}
+
+@media (max-width: 450px){
+	.spotify2{
+		padding: 2px 4px;
+	}
+
+	.fa-spotify{
+		display: none;
+	}
+}
+
+@media (max-width: 360px){
+	.spotify2{
+		padding: 12px 19px;
+	}
+	.spotify2 i{
+		display: none;
+	}
+/*
+	.fa-spotify{
+		display: none;
+	}*/
+}
+
+
+
 .sci{
 	position: absolute;
 	bottom: 40px;
@@ -256,7 +373,7 @@
 
 .first_song{
 	background-image: linear-gradient(rgba(2,1,20,-2.5), rgba(3,2,20,-4.5)),url(img/home.jpg);
-	/* background: cornflowerblue; */
+	 /*background: cornflowerblue; */
 }
 .first_song img{
 	text-align: right;
@@ -430,9 +547,11 @@
 
 .form{
 	/* margin: 5%; */
+	background-image: linear-gradient(rgba(2,1,20,-2.5), rgba(3,2,20,-4.5)),url(img/home.jpg);
 	border: 2px solid cornflowerblue;
 	box-shadow: 4px 4px 8px 2px  cornflowerblue;
-	margin-top: 1%;
+	margin-top: 5%;
+	/*height: 90%;*/
 	/* flex-basis: 48%; */
 	margin-left: 7%;
 	margin-right: 7%;
@@ -442,6 +561,19 @@
 @media (max-width: 650px){
 	.form{
 		height: 70%;
+	}
+}
+
+
+@media (max-width: 450px){
+	.form{
+		margin-top: 20%;
+		margin-right:3%%;
+		width: 90%;
+		height: 70%;
+	}
+	.logo{
+		width: 80px;
 	}
 }
 
@@ -463,6 +595,11 @@
 	background: transparent;
 	margin-left: 15%;
 	box-shadow: 4px 4px 8px 2px  cornflowerblue;
+}
+@media (max-width: 450px){
+	.form input, .form textarea{
+		margin-right: 2%;
+	}
 }
 
 .form textarea:hover{
@@ -498,6 +635,7 @@
 	position: relative;
 	margin-left: -45%;
 	margin-bottom: 0.5%;
+	/*margin-top: 4%;*/
 }
 
 @media (max-width: 650px){
@@ -526,14 +664,43 @@
 	}
 }
 
+@media (max-width: 450px){
+	.block2{
+		display: inline-block;
+		font-family: Segoe Script;
+		border-radius: 5%;
+		/* display: inline-block; */
+		text-decoration: none;
+		color: white;
+		background: #007AFF;
+		border: 2px solid #007AFF;
+		padding: 9px 20px;
+		margin-left: 35%;
+		margin-bottom: 0.5%;
+	}
+}
+
 
 .block:hover {
 	background: rgb(32, 107, 247);
+
 }
 
 
 .gender{
+	color: cornflowerblue;
+	border: 2px solid #ccc;
+	box-shadow: 4px 4px 8px 2px  cornflowerblue;;
+	color: white;
 	margin-left: 15%;
 	padding: 16px 34px;
 	background: transparent;
+	/*background: black;*/
+}
+
+.gender:hover{
+
+	/*color: black;*/
+	transition: 0.5s;
+	box-shadow: none;
 }

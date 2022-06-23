@@ -3,7 +3,7 @@
 	padding: 0;
 	font-family: sans-serif;
 }
-
+/* ====================================================== Home ========================================================================== */
 .container{
 	height: 100vh;
 	width: 100%;
@@ -204,7 +204,51 @@
 	transition: 0.5s;
 }
 
+.sci{
+	position: absolute;
+	bottom: 40px;
+	left: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 650px){
+	.sci{
+		display: none;
+	}
+}
 
+.sci li{
+	list-style: none;
+}
+
+.sci li a{
+	display: inline-block;
+	margin-left: 15px;
+	background: black;
+	width: 50px;
+	height: 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: 0.2s ease-in-out;
+}
+
+.sci li a:hover{
+	/* background: white; */
+	transform: translate(-20px);
+}
+
+.sci li a img{
+	filter: invert(8);
+	transform: scale(0.5);
+}
+
+
+
+/* ================================================================= End Home =================================================================== */
 
 /* ================================================================= PlayList =================================================================== */
 
@@ -260,6 +304,14 @@
 		/* text-align: center; */
 		margin-right: 40%;
 	}
+}
+
+@media(max-width: 650px){
+	.new_song{
+		font-size: 15px;
+	
+	}
+
 }
 
 .play2{
